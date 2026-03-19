@@ -236,6 +236,7 @@ int main(int argc, char *argv[]) {
 
     if (!keep_running) {
         fprintf(stderr, "Операция прервана пользователем\n");
+		unlink(output_file);
     }
 
     buffer_destroy(&buffer);
