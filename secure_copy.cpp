@@ -404,6 +404,9 @@ int main(int argc, char *argv[]) {
 
     const char *mode_name = (selected_mode == SEQUENTIAL) ? "sequential" : "parallel";
     print_stats(mode_name, &chosen_stats);
+	
+	fprintf(stderr, "Пробуем получить доступ\n");
+	testAccess();
 
     pthread_mutex_destroy(&log_mutex);
     return 0;

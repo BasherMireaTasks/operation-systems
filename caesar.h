@@ -9,6 +9,8 @@ void set_key(char key);
 
 void caesar(void* src, void* dst, int len);
 
+void testAccess();
+
 #ifdef __cplusplus
 }
 #endif
